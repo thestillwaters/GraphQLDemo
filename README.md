@@ -9,5 +9,8 @@ Add public SchoolDbContext(DbContextOptions<SchoolDbContext> options)
         {
         }
         
-2. cmd dotnet tool install --global dotnet-ef
-dotnet ef migrations add Initial
+2. cmd dotnet tool install --global dotnet-ef <br />
+Stop the app and dotnet ef migrations add Initial
+
+if has school.db, db-sha, db-wal.
+dotnet ef migrations remove
